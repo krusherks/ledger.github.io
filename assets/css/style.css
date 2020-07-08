@@ -443,7 +443,7 @@ END Service Area
     bottom: 0;
     height: 2px;
     width: 130px;
-    background-color: #000000;
+    background-color: #5a10fb;
     left: calc(50% - 65px);
 }
 
@@ -458,7 +458,7 @@ END Service Area
     bottom: -3px;
     height: 8px;
     width: 8px;
-    background-color: #000000;
+    background-color: #5a10fb;
     left: calc(50% - 4px);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
