@@ -841,11 +841,11 @@ END Video Area
 2.10 Pricing Area
 ===========================*/
 .pricing-area{background-color: #000;}
-.pricing-content{background: #000;}
+.pricing-content{background: #191919;}
 .single-price{
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0px 0px 9px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 9px rgba(215,240,247,0.05);
     padding-bottom: 35px;
     text-align: center;
     -webkit-transition: all 0.3s ease 0s;
@@ -853,7 +853,7 @@ END Video Area
     transition: all 0.3s ease 0s;
 }
 .single-price:hover{
-    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 10px rgba(215,240,247,0.1);
 }
 .prc-head{
         background: #d7f0f7;
@@ -863,7 +863,7 @@ END Video Area
 .prc-head span{
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+    color: #000;
     letter-spacing: 0;
     margin-bottom: 12px;
     display: block;
