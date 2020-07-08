@@ -839,7 +839,7 @@ END Video Area
 /*===========================
 2.10 Pricing Area
 ===========================*/
-.pricing-area{}
+.pricing-area{background-color: #fff;}
 .single-price{
     border-radius: 5px;
     overflow: hidden;
@@ -1154,12 +1154,12 @@ END Contact Area
 .footer-area{
     height: 80px;
     text-align: center;
-    background-color: #000000;
+    background-color: #fff;
     display: flex;
     align-items: center;
 }
 .footer-area p{
-    color: #ffffff;
+    color: #000;
 }
 /*===========================
 3. Blog Details
