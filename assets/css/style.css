@@ -253,7 +253,7 @@ textarea {
 }
 
 .slicknav_nav a:hover {
-    background: #fefefe none repeat scroll 0 0;
+    background: #d7f0f7 none repeat scroll 0 0;
     border-radius: 0;
 }
 
@@ -854,7 +854,7 @@ END Video Area
     box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
 }
 .prc-head{
-        background: #000000;
+        background: #d7f0f7;
     text-align: center;
     padding: 40px;
 }
@@ -868,7 +868,7 @@ END Video Area
 }
 .prc-head h5{
     font-size: 40px;
-    color: #ffffff;
+    color: #d7f0f7;
     letter-spacing: 0;
     font-weight: 500;
     line-height: 53px;
@@ -893,7 +893,7 @@ END Video Area
     font-weight: 400;
     letter-spacing: 0;
     color: #333;
-    border: 1px solid #591efb;
+    border: 1px solid #d7f0f7;
     padding: 5px 21px;
     border-radius: 3px;
     display: inline-block;
@@ -901,7 +901,7 @@ END Video Area
 }
 .single-price a:hover{
     color: #fff;
-    background-color: #591efb;
+    background-color: #d7f0f7;
 }
 
 /*===========================
