@@ -840,7 +840,8 @@ END Video Area
 /*===========================
 2.10 Pricing Area
 ===========================*/
-.pricing-area{background-color: #fff;}
+.pricing-area{background-color: #000;}
+.pricing-content{background: #000;}
 .single-price{
     border-radius: 5px;
     overflow: hidden;
