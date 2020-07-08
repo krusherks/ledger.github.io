@@ -111,7 +111,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #000;
     font-weight: normal;
     font-size: 15px;
     letter-spacing: 1.5px;
@@ -458,7 +458,7 @@ END Service Area
     bottom: -3px;
     height: 8px;
     width: 8px;
-    background-color: #000000;
+    background-color: #d7f0f7;
     left: calc(50% - 4px);
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1073,8 +1073,8 @@ END Blog Post
 END Contact Area
 ===========================*/
 .contact-area{}
-.contact-content{background: #191919;}
-.contact-form{background: #191919;}
+.contact-content{}
+.contact-form{}
 .contact-form form{}
 .contact-form input,
 .contact-form textarea{
