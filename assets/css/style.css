@@ -501,10 +501,11 @@ END About Area
 2.5 Feature Area
 ===========================*/
 
-.feature-area {}
+.feature-area {background-color: #fff;}
 
 .ft-content {
     margin-top: 76px;
+    background-color: #fff;
 }
 
 .ft-single {
