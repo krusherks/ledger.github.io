@@ -501,11 +501,11 @@ END About Area
 2.5 Feature Area
 ===========================*/
 
-.feature-area {background-color: #fff;}
+.feature-area {background-color: #000;}
 
 .ft-content {
     margin-top: 76px;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .ft-single {
@@ -530,14 +530,14 @@ END About Area
 .ft-single h2 {
     font-size: 25px;
     font-weight: 500;
-    color: #232323;
+    color: #5a0efb;
     letter-spacing: 0;
     line-height: 31px;
     margin-bottom: 8px;
 }
 
 .ft-single p {
-    color: #666666;
+    color: #fff;
 }
 
 .ft-screen-img {
