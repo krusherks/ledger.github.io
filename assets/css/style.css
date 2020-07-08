@@ -1074,7 +1074,7 @@ END Contact Area
 ===========================*/
 .contact-area{}
 .contact-content{background: #191919;}
-.contact-form{}
+.contact-form{background: #191919;}
 .contact-form form{}
 .contact-form input,
 .contact-form textarea{
@@ -1102,7 +1102,7 @@ END Contact Area
     transition: all 0.3s ease 0s;
 }
 .contact-form #send:hover{
-    background-color: #5c1ef9;
+    background-color: #d7f0f7;
 }
 .contact_info{
     padding-left: 40px;
@@ -1148,10 +1148,11 @@ END Contact Area
 .c-social .icon {
     font-size: 24px;
     color: #5c1ef9;
+    background-color: #d7f0f7;
     margin-bottom: 35px;
 }
 .c-social ul li a:hover{
-    background-color: #000;
+    background-color: #d7f0f7;
 }
 
 /*===========================
