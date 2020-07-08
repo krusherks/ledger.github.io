@@ -143,7 +143,7 @@ textarea {
     top: 0;
     width: 100%;
     z-index: 998;
-    background-color: #000000;
+    background-color: #191919;
 }
 
 .menu-area {
@@ -424,7 +424,7 @@ END Service Area
 .section-title h2 {
     font-size: 30px;
     font-weight: 500;
-    color: #d7f0f7;
+    color: #191919;
     letter-spacing: 0;
     line-height: 37px;
     position: relative;
@@ -623,8 +623,8 @@ END Achivement Area
     position: absolute;
     left: 50%;
     bottom: 152px;
-    height: 603px;
-    width: 504px;
+    height: 606px;
+    width: 502px;
     z-index: 111;
     transform: translateX(-50%);
 }
