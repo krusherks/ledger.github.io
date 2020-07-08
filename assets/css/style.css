@@ -614,8 +614,11 @@ END Achivement Area
 
 .screen-area {
     position: relative;
+    background-color: #000;
 }
-
+.screen-content {
+    background-color: #000;
+}
 .screen-area img.screen-img {
     position: absolute;
     left: 50%;
@@ -1168,7 +1171,7 @@ END Contact Area
     align-items: center;
 }
 .footer-area p{
-    color: #000;
+    color: #fff;
 }
 /*===========================
 3. Blog Details
