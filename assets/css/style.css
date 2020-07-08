@@ -623,8 +623,8 @@ END Achivement Area
     position: absolute;
     left: 50%;
     bottom: 152px;
-    height: 626px;
-    width: 498px;
+    height: 636px;
+    width: 496px;
     z-index: 111;
     transform: translateX(-50%);
 }
