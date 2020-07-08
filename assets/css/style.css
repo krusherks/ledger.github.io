@@ -424,7 +424,7 @@ END Service Area
 .section-title h2 {
     font-size: 30px;
     font-weight: 500;
-    color: #000;
+    color: #d7f0f7;
     letter-spacing: 0;
     line-height: 37px;
     position: relative;
@@ -467,7 +467,7 @@ END Service Area
 }
 
 .section-title.text-white h2:after{
-    background-color: #fff;
+    background-color: #000;
 }
 
 .section-title p {
