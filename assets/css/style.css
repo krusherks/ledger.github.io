@@ -623,8 +623,6 @@ END Achivement Area
     position: absolute;
     left: 50%;
     bottom: 152px;
-    width: 506px;
-    height: 546px;
     z-index: 111;
     transform: translateX(-50%);
 }
@@ -641,7 +639,7 @@ END Achivement Area
 .screen-slider .owl-dots .owl-dot {
     height: 15px;
     width: 15px;
-    border: 1px solid #000000;
+    border: 1px solid #d7f0f7;
     border-radius: 50%;
     display: inline-block;
     margin: 0px 2px;
@@ -651,7 +649,7 @@ END Achivement Area
 }
 
 .screen-slider .owl-dots .active {
-    background-color: #000000;
+    background-color: #d7f0f7;
 }
 
 
