@@ -623,8 +623,8 @@ END Achivement Area
     position: absolute;
     left: 50%;
     bottom: 152px;
-    height: 600px;
-    width: 506px;
+    height: 603px;
+    width: 504px;
     z-index: 111;
     transform: translateX(-50%);
 }
@@ -1159,7 +1159,9 @@ END Contact Area
     background-color: #d7f0f7;
     color: #000;    
 }
-
+.icon-cog {
+  color: #d7f0f7;
+}
 /*===========================
 END Contact Area
 ===========================*/
