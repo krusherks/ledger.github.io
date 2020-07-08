@@ -1073,6 +1073,7 @@ END Blog Post
 END Contact Area
 ===========================*/
 .contact-area{}
+.contact-content{background: #191919;}
 .contact-form{}
 .contact-form form{}
 .contact-form input,
@@ -1101,7 +1102,7 @@ END Contact Area
     transition: all 0.3s ease 0s;
 }
 .contact-form #send:hover{
-    background-color: #444;
+    background-color: #5c1ef9;
 }
 .contact_info{
     padding-left: 40px;
@@ -1144,9 +1145,13 @@ END Contact Area
     font-size: 20px;
     margin-right: 6px;
 }
-
+.c-social .icon {
+    font-size: 24px;
+    color: #5c1ef9;
+    margin-bottom: 35px;
+}
 .c-social ul li a:hover{
-    background-color: #444;
+    background-color: #000;
 }
 
 /*===========================
@@ -1162,7 +1167,7 @@ END Contact Area
     align-items: center;
 }
 .footer-area p{
-    color: #fff;
+    color: #000;
 }
 /*===========================
 3. Blog Details
