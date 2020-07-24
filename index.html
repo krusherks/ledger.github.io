@@ -362,7 +362,7 @@
                         <form name="submit-to-google-sheet">
                             <input type="text" name="name" placeholder="Enter Your Name" required>
                             <input type="text" name="email" placeholder="Enter Your Email" required>
-                            <input type="tel" name="telephone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
+                            <input type="tel" name="telephone" onchange="this.value=addSpaces(this.value);" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
                             <textarea name="msg" id="msg" placeholder="Your Message "></textarea>
                             <select id="plan" name="plan">
     						<option value="basic">Basic Plan</option>
