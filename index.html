@@ -359,14 +359,15 @@
             <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="contact-form">
-                        <form action="#">
-                            <input type="text" name="name" placeholder="Enter Your Name">
-                            <input type="text" name="email" placeholder="Enter Your Email">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="name" placeholder="Enter Your Name" required>
+                            <input type="text" name="email" placeholder="Enter Your Email" required>
+                            <input type="tel" name="telephone" placeholder="888 888 8888" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12"  title="Ten digits code" required/>
                             <textarea name="msg" id="msg" placeholder="Your Message "></textarea>
                             <select id="plan" name="plan">
-    						<option value="basic">Basic</option>
-    						<option value="standard">Standard</option>
-    						<option value="premium">Premium</option>
+    						<option value="basic">Basic Plan</option>
+    						<option value="standard">Standard Plan</option>
+    						<option value="premium">Premium Plan</option>
     						</select>
                             <input type="submit" value="Send" id="send">
                         </form>
@@ -429,6 +430,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbx0hoT6eNObJI-WIz9vE-LFJVTtb4lVjb1iGFwgWVvG7cJ2JBpF/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </body>
 
 </html>
