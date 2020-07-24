@@ -252,11 +252,6 @@
     /*-----------------------------
     Background Paralax activation
     ------------------------------- */
-    function addSpaces(initial){
-        initial.replace("/([0-9]{3})/","\1 ");
-        initial.replace("/[0-9]{3} ([0-9]{3})/","\1 ");
-        return initial;
-    }
     function bgParallax() {
         if ($(".parallax").length) {
             $(".parallax").each(function() {
