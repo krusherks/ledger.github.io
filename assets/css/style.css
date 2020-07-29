@@ -769,12 +769,12 @@ END Pricing Area
     border-radius: 33px;
     font-weight: 500;
     font-size: 14px;
-    color: #fff;
+    color: #000;
     letter-spacing: 0;
 }
 .download-btns a:hover{
     background-color: #fff;
-    color: #5c1ef9;
+    color: #000;
 }
 .download-btns a i {
     font-size: 19px;
