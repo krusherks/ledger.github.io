@@ -436,7 +436,7 @@ END Service Area
 }
 
 .section-title.text-white h2{
-    color: #fff;
+    color: #000;
 }
 
 .section-title h2:before {
@@ -451,7 +451,7 @@ END Service Area
 }
 
 .section-title.text-white h2:before{
-    background-color: #fff;
+    background-color: #000;
 }
 
 .section-title h2:after {
