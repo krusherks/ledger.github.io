@@ -137,6 +137,10 @@ textarea {
 /*==========================
 2.1 Header Area
 ===========================*/
+.fa_custom {
+color: #d7f0f7;
+}
+</style>
 .header-area {
     position: fixed;
     left: 0;
