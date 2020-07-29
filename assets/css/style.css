@@ -163,6 +163,7 @@ textarea {
 
 .main-menu {
     text-align: right;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 }
 
 .main-menu nav ul {}
