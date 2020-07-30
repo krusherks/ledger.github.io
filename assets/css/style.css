@@ -815,6 +815,7 @@ END Contact Area
     height: 45px;
     width: 150px;
     background: #000000;
+    border: 2px solid #fff;
     color: #fff;
     text-align: center;
     line-height: 45px;
