@@ -825,6 +825,7 @@ END Contact Area
 }
 .contact-form #send:hover{
     background-color: #d7f0f7;
+    border: 2px solid #d7f0f7;
     color: #000;
 }
 .contact_info{
