@@ -790,7 +790,9 @@ END Call To Action
 /*===========================
 END Contact Area
 ===========================*/
-.contact-area{}
+.contact-area{
+    background: #000000;
+}
 .contact-content{}
 .contact-form{}
 .contact-form form{}
