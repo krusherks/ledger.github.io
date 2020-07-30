@@ -814,9 +814,9 @@ END Contact Area
 .contact-form #send{
     height: 45px;
     width: 150px;
-    background: #000000;
+    background: #fff;
     border: 2px solid #fff;
-    color: #fff;
+    color: #000;
     text-align: center;
     line-height: 45px;
     -webkit-transition: all 0.3s ease 0s;
