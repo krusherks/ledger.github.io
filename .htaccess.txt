@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} https://www.rupaiya.one/ [NC]
+RewriteRule ^(.*)$ https://rupaiya.one [L,R=301,NC] 
