@@ -51,13 +51,13 @@
 
 ::-moz-selection {
     background: #D7F0F7;
-    color: #fff;
+    color: #000;
     text-shadow: none;
 }
 
 ::selection {
     background: #D7F0F7;
-    color: #fff;
+    color: #000;
     text-shadow: none;
 }
 
