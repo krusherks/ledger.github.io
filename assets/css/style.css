@@ -889,11 +889,8 @@ END Contact Area
 
 /*footer area*/
 .footer-area{
-    height: 80px;
-    text-align: center;
-    background-color: #000;
-    display: flex;
-    align-items: center;
+    background-color: #D7F0F7;
+    padding: 24px 14px 16px 0;
 }
 .footer-area p{
     color: #666;
