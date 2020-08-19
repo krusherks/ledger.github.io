@@ -395,9 +395,9 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="contact-form">
                         <form name="submit-to-google-sheet" onSubmit="if(!confirm('Do you want to submit the form?')){return false;}">
-                            <input type="text" name="name" placeholder="Enter Your Name" required>
-                            <input type="text" name="email" placeholder="Enter Your Email" required>
-                            <input type="tel" name="telephone" placeholder="888 888 8888" title="Ten digits code" required/>
+                            <input type="text" name="name" placeholder="Enter Your Full Name" maxlength="32" pattern="[A-Za-z]+ [A-Za-z]+" required>
+                            <input type="text" name="email" placeholder="Enter Your Email" pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*" required>
+                            <input type="tel" name="telephone" placeholder="888 888 8888" title="Ten digits code" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
                             <textarea style="overflow:auto;resize:none" name="msg" id="msg" placeholder="Your Message "></textarea>
                             <select id="plan" name="plan">
     						<option value="basic">Basic Plan</option>
