@@ -1,9 +1,9 @@
 /* Base */
 body {
-  line-height: 1.7;
-  color: gray;
+  line-height: 30px;
+  color: #242328;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 15px;
   background: #fff;
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
 
@@ -27,7 +27,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  line-height: 1.5;
+  line-height: 30px;
   color: #000; }
 
 .border-2 {
