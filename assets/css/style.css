@@ -100,7 +100,10 @@ input,
 textarea {
     letter-spacing: 1px;
 }
-
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    line-height: 50px;
+  color: #000; }
 
 /*==========================
 2.1 Header Area
