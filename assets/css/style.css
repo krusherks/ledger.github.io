@@ -595,14 +595,18 @@ END Achivement Area
 }
 .screen-area img.screen-img {
     position: absolute;
-    left: 50%;
-    bottom: 152px;
-    height: 636px;
-    width: 496px;
+    left: 48.1%;
+    height: 415px;
+    width: 350px;
+    bottom: 181px;
     z-index: 111;
     transform: translateX(-50%);
 }
-
+.screen-area .single-screen{
+        height: 290px;
+    width: 150px;
+        bottom: 272px;
+}
 .screen-slider {
     margin-top: 116px;
 }
