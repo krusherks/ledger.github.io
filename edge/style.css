@@ -74,11 +74,10 @@ a:focus {
 }
 .wrapper .duck {
   background-image: url("https://rupaiya.one/assets/img/icon/logo1.png");
-  background-size: 100px 100px;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  width: 180px;
-  max-width: 180px;
+  width: 300px;
+  max-width: 300px;
   height: 180px;
   display: block;
   position: relative;
@@ -170,4 +169,13 @@ a:focus {
 }
 .wrapper .message span {
   color: #9a9a9a;
+}
+.wrapper h1{
+  color:white;
+  display: block;
+  position: relative;
+  font-size: 0;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: -1.25em;
 }
