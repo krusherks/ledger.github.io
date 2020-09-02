@@ -8,6 +8,7 @@
     <title>Ledger | Split Bills | Track Expenses | Settle Up | by rupaiya.one</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Specific Meta  -->
+    <link rel='manifest' href='/manifest.json'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="Ledger by rupaiya one let's you keep track of your expenses, split bills with your loved ones, and settle them on the app using UPI & other methods">
     <meta name="keywords" content="ledger, splitter, rupaiya, one, splitwise, khata book, application, app, apps, udhaar, rupaiya one, rupaiya.one, split, bills, expenses, settle up, upi, money, bill, splitting, tracking, pay, money tracking app, upi settling, paytm, razorpay">
@@ -476,6 +477,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
       .then(response => console.log('Success!', response))
       .catch(error => console.error('Error!', error.message))
   })
+</script>
+<script type="module">
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
 </script>
 </body>
 
