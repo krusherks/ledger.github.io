@@ -55,6 +55,12 @@
   <div class="message"><span>Powered by <a href="https://rupaiya.one/">rupaiya.one</a>.</span></div>
 </div>
 <!-- partial -->
-  
+  <script type="module">
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+</script>
 </body>
 </html>
