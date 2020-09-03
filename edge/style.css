@@ -19,7 +19,6 @@ body {
   overflow: hidden;
   position: relative;
   background-repeat: no-repeat;
-  max-height: 100%;
   line-height: 1.6;
   padding: 0;
   margin: 0;
@@ -177,8 +176,8 @@ a:focus {
   padding-top: 1.25em;
   margin: 0 auto;
   text-align: center;
-  line-height: 1.4;
-  font-size: 1.4em;
+  line-height: 1.1;
+  font-size: 1.1em;
 }
 .wrapper .message span {
   color: white;
