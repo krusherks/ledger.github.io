@@ -18,11 +18,11 @@ body {
   background-image: url("https://rupaiya.one/edge/IMG.jpg");
   overflow: hidden;
   position: relative;
-  height: auto;
+  background-repeat: no-repeat;
+  max-height: 100%;
   line-height: 1.6;
   padding: 0;
   margin: 0;
-  min-height: 100%;
 }
 .menu {
   position: absolute;
@@ -86,6 +86,19 @@ a:focus {
   margin-bottom: 0.8em;
   margin-top: -1.25em;
   text-indent: -9999px;
+}
+.chrome {
+  background: #d7f0f7;
+  opacity: 0.9;
+  color:#242322;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10%;
+  margin-left: 20%;
+  background-repeat: no-repeat;
+  max-width: 190px;
+  height: 50px;
 }
 .wrapper .search {
   box-sizing: border-box;
@@ -168,14 +181,37 @@ a:focus {
   font-size: 1.4em;
 }
 .wrapper .message span {
-  color: #9a9a9a;
+  color: white;
 }
 .wrapper h1{
+  opacity: 0.9;
   color:white;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
   display: block;
   position: relative;
-  font-size: 0;
   margin: auto;
+  max-width: 200px;
+  margin-bottom: 2em;
+  margin-top: -1.25em;
+}
+a {
+  color: #9a9a9a;
+  font-weight: bold;
+  background: #242322;
+}
+.button {
+  color: #9a9a9a;
+  font-weight: bold;
+  background: #242322;
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  position: relative;
+  margin: auto;
+  max-width: 200px;
   margin-bottom: 2em;
   margin-top: -1.25em;
 }
