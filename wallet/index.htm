@@ -3,6 +3,8 @@
 <head>
     <title>Rupaiya Wallet</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+     <link rel="shortcut icon" type="image/png" href="../assets/img/icon/favicon.png">
+    <link rel="apple-touch-icon" href="../assets/img/icon/apple-touch-icon.png">
 </head>
 <body>
     <div class="container" id="main">
@@ -10,12 +12,16 @@
         </header>
         <div class="panel">
             <div class="field">Wallet Address: <div class="field-value" id="address"></div></div>
+            <br>
             <div class="field">ETH balance: <div class="field-value" id="ethBalance"></div></div>
+            <br>
             <div class="field">Token balance: <div class="field-value" id="tokenBalance"></div></div>
         </div>
         <div class="panel">
             <div class="field">Send : <input type="text" id="transferValue" size="10" /> <div class="field-value" id="tokenSymbol"></div></div>
+            <br>
             <div class="field">To : <input type="text" id="recipientAddress" size="50" /></div>
+            <br>
             <div class="button"><a class="btn" href="#" onclick="transferTokens()">Send</a></div>
         </div>
         <div class="panel">
