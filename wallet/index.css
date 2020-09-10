@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5,
   color: #000; }
 
 div.container {
-    margin-top: 25%;
+    margin-top: 35px;
     padding-left: 15px;
     background: #000;
     height: 45px;
@@ -97,6 +97,7 @@ div.container {
     color: #fff;
 }
 div.panel {
+    margin-top: 10px;
     background: #000;
     border-radius: 3px;
     border: none;
@@ -106,10 +107,10 @@ div.button {
     text-align: left;
 }
 .btn {
-  height: 45px;
+    padding:2px;
+    height: 45px;
     width: 150px;
     background: #fff;
-    border: 2px solid #fff;
     color: #000;
     text-align: center;
     line-height: 45px;
