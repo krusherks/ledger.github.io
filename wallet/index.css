@@ -1,11 +1,91 @@
-header {
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900');
+
+.clear {
+    clear: both
+}
+
+::-moz-selection {
+    background: #D7F0F7;
+    color: #000;
+    text-shadow: none;
+}
+
+::selection {
+    background: #D7F0F7;
+    color: #000;
+    text-shadow: none;
+}
+
+.no-mar {
+    margin: 0!important;
+}
+
+.no-pad {
+    padding: 0!important;
+}
+
+.no-top-pad {
+    padding-top: 0!important;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
     text-align: center;
 }
-body {
-    color: white;
-    background: #000;
-    margin-top: 30px;
+
+.text-right {
+    text-align: right;
 }
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background: #000;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #fff;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    /* Fix for webkit rendering */
+    -webkit-text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+textarea {
+    letter-spacing: 1px;
+}
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    line-height: 50px;
+  color: #000; }
+
 div.container {
     background: #222;
     height: 45px;
