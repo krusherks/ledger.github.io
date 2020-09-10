@@ -56,7 +56,6 @@ html {
     font-size: 62.5%;
     -webkit-font-smoothing: antialiased;
     min-height: 100%;
-    margin-top: 10px;
 }
 
 body {
@@ -89,6 +88,7 @@ h1, h2, h3, h4, h5,
 
 div.container {
     margin-top: 35px;
+    padding-top: 15px;
     padding-left: 15px;
     background: #000;
     height: 45px;
@@ -120,4 +120,7 @@ div.button {
 }
 .btn:hover {
   background: #d7f0f7;
+}
+a {
+    color:#d7f0f7;
 }
