@@ -1,14 +1,14 @@
 {
-    "name": "ethereum-erc20-wallet",
+    "name": "Crypto",
     "version": "0.0.1",
     "description": "ERC20 Wallet for Metamask or Mist",
     "scripts": {
         "lint": "eslint src",
         "build": "cross-env NODE_ENV=production webpack",
-        "build-gh-pages": "cross-env NODE_ENV=production BASE=/ethereum-erc20-wallet/ webpack",
+        "build-gh-pages": "cross-env NODE_ENV=production BASE=/crypto/ webpack",
         "dev": "cross-env NODE_ENV=development node server.js"
     },
-    "author": "Merkurev Dmitry",
+    "author": "Krish S",
     "license": "Apache 2",
     "devDependencies": {
         "babel-core": "^6.23.1",
