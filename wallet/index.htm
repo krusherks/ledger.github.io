@@ -3,13 +3,80 @@
 <head>
     <title>Rupaiya Wallet | by rupaiya.one</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/magnificpopup.css">
+    <link rel="stylesheet" href="assets/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
      <link rel="shortcut icon" type="image/png" href="../assets/img/icon/favicon.png">
     <link rel="apple-touch-icon" href="../assets/img/icon/apple-touch-icon.png">
 </head>
 <body>
-    <div class="container" id="main">
-        <header>
-        </header>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- header area start -->
+    <script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Rupaiya One",
+ "url" : "https://rupaiya.one",
+ "sameAs" : [
+   "https://twitter.com/rupaiyaone",
+   "https://www.facebook.com/rupaiyaone", 
+   "https://www.instagram.com/rupaiyaone",
+   "https://www.pinterest.com/rupaiyaone"
+   ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "305, Shivlal Motilal Mansion, Bellasis Road",
+    "addressRegion": "MH",
+    "postalCode": "400008",
+    "addressCountry": "IN"
+  }
+}
+</script>
+    <header id="header">
+        <div class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-area">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo">
+                                <a href="#"><img src="../assets/img/icon/logo1.png" alt="Ledger by rupaiya one - Home Page"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 hidden-xs hidden-sm">
+                            <div class="main-menu">
+                                <nav class="nav-menu">
+                                    <ul>
+                                        <li class="active"><a href="../#home">Home</a></li>
+                                        <li><a href="../#feature">Features</a></li>
+                                        <li><a href="../#screenshot">Screens</a></li>
+                                        <li><a href="../#pricing">Pricing</a></li>
+                                        <li><a href="../#download">Download</a></li>
+                                        <li><a href="../blogs/">Blogs</a></li>
+                                        <li><a href="../edge/">EDGE One</a></li>
+                                        <li><a href="../#contact">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                            <div class="mobile_menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
         <div class="panel">
             <div class="field">Wallet Address: <div class="field-value" id="address"></div></div>
             <br>
@@ -27,7 +94,7 @@
         <div class="panel">
             <div id="transferResult"></div>
         </div>
-    </div>
+    
     <footer>
         <div class="footer-area">
             <div class="container">
