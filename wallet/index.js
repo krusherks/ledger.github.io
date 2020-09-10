@@ -81,7 +81,7 @@ function transferTokens() {
       document.getElementById("transferResult").innerHTML = error;
     } else {
       document.getElementById("transferResult").innerHTML =
-        '<a target="_blank" href="https://etherscan.io/tx/' +
+        '<a target="_blank" href="https://rinkeby.etherscan.io/tx/' +
         result +
         '">Click to view transaction on etherscan.io</a>';
     }
