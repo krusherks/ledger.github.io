@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple ERC20 Token Wallet</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container" id="main">
+        <header>
+           <h1>Simple ERC20 Token Wallet</h1>
+        </header>
+        <div class="panel">
+            <div class="field">Wallet Address: <div class="field-value" id="address"></div></div>
+            <div class="field">ETH balance: <div class="field-value" id="ethBalance"></div></div>
+            <div class="field">Token balance: <div class="field-value" id="tokenBalance"></div></div>
+        </div>
+        <div class="panel">
+            <div class="field">Send <input type="text" id="transferValue" size="10" /> <div class="field-value" id="tokenSymbol"></div></div>
+            <div class="field">To address: <input type="text" id="recipientAddress" size="50" /></div>
+            <div class="button"><a class="btn" href="#" onclick="transferTokens()">Send</a></div>
+        </div>
+        <div class="panel">
+            <div id="transferResult"></div>
+        </div>
+    </div>
+    <script src="web3/dist/web3.min.js"></script>
+    <script src="index.js"></script>
+    <script>
+    window.addEventListener("load", function() {
+      // Check if Web3 has been injected by the browser (Mist/MetaMask)
+      if (typeof web3 !== "undefined") {
+        // Use Mist/MetaMask's provider
+        web3 = new Web3(web3.currentProvider);
+        startApp();
+      } else {
+        displayProviderInfo();
+      }
+    });
+    </script>
+</body>
+</html>
