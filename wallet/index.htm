@@ -65,11 +65,6 @@
             <br>
             <br>
             <br>
-        <button className="Login-button Login-mm" onClick={this.handleClick}>
-          {loading ? 'Loading...' : 'Login with MetaMask'}
-        </button>
-        
-            <br>
             <br>
             <br>
             <br>
@@ -185,9 +180,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     }).then((response) => response.json());
   };
     window.addEventListener("load", function() {
-        if (typeof web3 !== "undefined") {
+        if (!(window as any).ethereum) {
+      window.alert('Please install MetaMask first.');
+      return;
+    }
+
+    if (!web3) {
+      try {
+        // Request account access if needed
+        await (window as any).ethereum.enable();
+
+        // We don't know window.web3 version, so we use our own instance of Web3
+        // with the injected provider given by MetaMask
+        web3 = new Web3((window as any).ethereum);
+      } catch (error) {
+        window.alert('You need to allow MetaMask.');
+        return;
+      }
+    }
+       // if (typeof web3 !== "undefined") {
         // Use Mist/MetaMask's provider
-        web3 = new Web3(web3.currentProvider);
+     //   web3 = new Web3(web3.currentProvider);
         startApp();
       } else {
         displayProviderInfo();
