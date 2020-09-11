@@ -104,6 +104,13 @@ div.main {
     border: none;
     color: #fff;
 }
+div.field-value {
+    margin-top: 10px;
+    background: #000;
+    border-radius: 3px;
+    border: none;
+    color: #000;
+}
 div.panel {
     margin-top: 10px;
     background: #000;
