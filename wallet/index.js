@@ -11,6 +11,7 @@ contractInstance = web3.eth
 function displayProviderInfo() {
   document.getElementById("main").innerHTML =
     'No compatible wallet provider found. Please install <a target="_blank" href="https://metamask.io/">Metamask</a>.';
+  document.getElementById("main").style.padding = '50% 50%';
 }
 
 function startApp() {
