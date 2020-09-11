@@ -95,20 +95,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="index.js"></script>
     <script>
     window.addEventListener("load", function() {
-        if (window.ethereum) {
-    const web3 = new Web3(window.ethereum);
-    try {
-      // Request account access if needed
-      await window.ethereum.enable();
-      // Acccounts now exposed
-      return web3;
-      startApp();
-    } catch (error) {
-      console.error(error);
-    }
-  }
-  // Legacy dapp browsers...
-  else if (typeof web3 !== "undefined") {
+        if (typeof web3 !== "undefined") {
         // Use Mist/MetaMask's provider
         web3 = new Web3(web3.currentProvider);
         startApp();
