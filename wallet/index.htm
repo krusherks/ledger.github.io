@@ -100,23 +100,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="index.js"></script>
     <script>
           function hello() {
-          if (typeof web3 !== "undefined") {
-            alert("entered if");
-      try {
-        alert("init entry");
-        // Request account access if needed
-        await web3.currentProvider.enable();
-        // We don't know window.web3 version, so we use our own instance of Web3
-        // with the injected provider given by MetaMask
-        web3 = new Web3(web3.currentProvider);
-        alert("entry");
-      } catch (error) {
-        window.alert('You need to allow MetaMask.');
-        return;
-      }
-    } else {
-      alert("Failed to enter");
-    }
+          alert("entry");
 }
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
