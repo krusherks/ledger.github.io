@@ -68,6 +68,7 @@
             <br>
             <script>
           function hello() {
+          if (typeof web3 !== "undefined") {
             alert("entered if");
       try {
         alert("init entry");
@@ -80,8 +81,9 @@
       } catch (error) {
         window.alert('You need to allow MetaMask.');
         return;
-     
-  }}
+      }
+    }
+}
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
         <button id="hellobutton">Connect to METAMASK</button>
