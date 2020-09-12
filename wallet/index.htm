@@ -101,16 +101,27 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script>
 
           function hello() {
-            let ethereum = window.ethereum;
-let web3 = window.web3;
-if (typeof ethereum !== 'undefined') {
- await ethereum.enable();
- web3 = new Web3(ethereum);
-} else if (typeof web3 !== 'undefined') {
- web3 = new Web3(web3.currentProvider);
-} else {
- web3 = new Web3(new Web3.providers.HttpProvider(process.env.WEB3_PROVIDER));
-}
+             if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+            // Request account access if needed
+            await ethereum.enable();
+            // Acccounts now exposed
+            web3.eth.sendTransaction({/* ... */});
+        } catch (error) {
+            // User denied account access...
+        }
+    }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider);
+        // Acccounts always exposed
+        web3.eth.sendTransaction({/* ... */});
+    }
+    // Non-dapp browsers...
+    else {
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
 }
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
