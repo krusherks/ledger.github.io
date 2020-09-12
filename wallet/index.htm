@@ -66,12 +66,16 @@
             <br>
             <br>
             <br>
-        <button onclick="function() {
+            <script>
+          function hello() {
           alert('Hello\nHow are you?');
           
         // Use Mist/MetaMask's provider
         web3 = new Web3(web3.currentProvider);
-      }">Connect to METAMASK</button>
+      }
+document.getElementById("hellobutton").addEventListener("click", hello);
+</script>
+        <button id="hellobutton">Connect to METAMASK</button>
             <br>
             <br>
             <br>
