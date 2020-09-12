@@ -100,7 +100,12 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="index.js"></script>
     <script>
           function hello() {
-          alert("entry");
+          if (typeof web3 !== "undefined") {
+            alert("entered if");
+      
+    } else {
+      alert("Failed to enter");
+    }
 }
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
