@@ -67,14 +67,14 @@
             <br>
             <br>
         <button onclick="function() {
-          if (!web3) {
+          if (typeof web3 !== 'undefined') {
       try {
         // Request account access if needed
-        await (window as any).ethereum.enable();
+        await (window as any).currentProvider.enable();
 
         // We don't know window.web3 version, so we use our own instance of Web3
         // with the injected provider given by MetaMask
-        web3 = new Web3((window as any).ethereum);
+        web3 = new Web3((window as any).currentProvider);
       } catch (error) {
         window.alert('You need to allow MetaMask.');
         return;
