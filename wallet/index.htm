@@ -101,7 +101,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script>
           function hello() {
          if (typeof web3 !== 'undefined') {
-  web3 = new Web3(web3.currentProvider);
+  web3 = web3.currentProvider;
   alert("provider set");
 } else {
       alert("Failed to enter");
