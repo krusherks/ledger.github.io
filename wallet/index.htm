@@ -102,7 +102,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           function hello() {
           if (typeof web3 !== "undefined") {
             alert("entered if");
-      
+        // Request account access if needed
+        await web3.currentProvider.enable();
+        // We don't know window.web3 version, so we use our own instance of Web3
+        // with the injected provider given by MetaMask
+        alert("entered enable");
+        web3 = new Web3(web3.currentProvider);
+        alert("entry");
+
     } else {
       alert("Failed to enter");
     }
