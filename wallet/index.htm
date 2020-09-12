@@ -68,9 +68,22 @@
             <br>
             <script>
           function hello() {
-          alert("entered funct");
-          
-}
+            alert("entered if");
+      try {
+        alert("init entry");
+        // Request account access if needed
+        await web3.currentProvider.enable();
+        // We don't know window.web3 version, so we use our own instance of Web3
+        // with the injected provider given by MetaMask
+        web3 = new Web3(web3.currentProvider);
+        alert("entry");
+      } catch (error) {
+        window.alert('You need to allow MetaMask.');
+        return;
+      }
+    }else {
+      alert("no entry");
+    }
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
         <button id="hellobutton">Connect to METAMASK</button>
