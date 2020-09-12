@@ -68,14 +68,20 @@
             <br>
             <script>
           function hello() {
-          if ((typeof window.ethereum !== 'undefined')
-    || (typeof window.web3 !== 'undefined')) {
-        return new Web3(window['ethereum'] || window.web3.currentProvider)
-    } else {
-        // here you could use a different provider, maybe use an infura account, or maybe let the user know that they need to install metamask in order to continue
-        return new Web3(new Web3.providers.HttpProvider("https://mainnet.infura.io/v3/..."))
-}
+          if (!web3) {
+      try {
+        // Request account access if needed
+        await (window as any).ethereum.enable();
+
+        // We don't know window.web3 version, so we use our own instance of Web3
+        // with the injected provider given by MetaMask
+        web3 = new Web3((window as any).ethereum);
+      } catch (error) {
+        window.alert('You need to allow MetaMask.');
+        return;
       }
+    }
+}
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
         <button id="hellobutton">Connect to METAMASK</button>
