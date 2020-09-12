@@ -70,11 +70,11 @@
           if (typeof web3 !== 'undefined') {
       try {
         // Request account access if needed
-        await (window as any).currentProvider.enable();
+        await web3.currentProvider.enable();
 
         // We don't know window.web3 version, so we use our own instance of Web3
         // with the injected provider given by MetaMask
-        web3 = new Web3((window as any).currentProvider);
+        web3 = new Web3(web3.currentProvider);
       } catch (error) {
         window.alert('You need to allow MetaMask.');
         return;
