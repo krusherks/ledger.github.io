@@ -99,13 +99,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="web3/dist/web3.min.js"></script>
     <script src="index.js"></script>
     <script>
+
           function hello() {
-         if (typeof web3 !== 'undefined') {
-  web3 = web3.currentProvider;
-  alert("provider set");
+            let ethereum = window.ethereum;
+let web3 = window.web3;
+if (typeof ethereum !== 'undefined') {
+ await ethereum.enable();
+ web3 = new Web3(ethereum);
+} else if (typeof web3 !== 'undefined') {
+ web3 = new Web3(web3.currentProvider);
 } else {
-      alert("Failed to enter");
-    }
+ web3 = new Web3(new Web3.providers.HttpProvider(process.env.WEB3_PROVIDER));
+}
 }
 document.getElementById("hellobutton").addEventListener("click", hello);
 </script>
