@@ -106,6 +106,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script>
         window.addEventListener("load", function() {
       // Check if Web3 has been injected by the browser (Mist/MetaMask)
+      alert("Hello\nHow are you?");
       if (typeof web3 !== "undefined") {
         // Use Mist/MetaMask's provider
         web3 = new Web3(web3.currentProvider);
