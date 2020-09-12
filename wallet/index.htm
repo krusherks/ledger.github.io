@@ -68,7 +68,9 @@
             <br>
             <script>
           function hello() {
+          alert("entered funct");
           if (!web3) {
+            alert("entered if");
       try {
         alert("init entry");
         // Request account access if needed
@@ -81,8 +83,7 @@
         window.alert('You need to allow MetaMask.');
         return;
       }
-    }
-    else{
+    }else {
       alert("no entry");
     }
 }
