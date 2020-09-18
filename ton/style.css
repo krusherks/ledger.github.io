@@ -12,6 +12,17 @@ body {
   text-decoration:none;
   position:absolute;top:640px; left:50%;margin-left:-35px;
 }
+a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover{
+	color: #48daa1;
+	text-decoration: none;
+	font-weight: bold;
+	cursor:pointer;
+}
 #view-code:hover{color:#34c29e;}
 
 /* --- Product Card ---- */
