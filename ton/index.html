@@ -42,10 +42,10 @@
                     <p>Warnings of Overdose Risk?</p>                                            
                     
                     <div class="product-options">
-                    <span>The internet dare that went viral in 2020 joined a long list of dangerous challen...</span>
-                    
-                    <div class="colors">
-                         READ FULL ARTICLE
+                    <span>The internet dare that went viral in 2020<span id="dots">...</span><span id="more"> joined a long list of dangerous challenges that have targeted teenagers on social media.</span>
+                    </span>
+                    <div class="colors" onclick="myFunction()" id="myBtn">
+                         READ MORE
                     </div>
                 </div>                       
                 </div>                         
@@ -86,7 +86,23 @@
 <div id="arrow-right">
 <img src="./img/ra.png" width="100px" height="100px"/>
 </div>
+<script type="text/javascript">
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "READ MORE";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "READ LESS";
+    moreText.style.display = "inline";
+  }
+}
+</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- partial -->
   <script  src="./script.js"></script>
