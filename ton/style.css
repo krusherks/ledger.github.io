@@ -4,6 +4,7 @@ body {
 	background: #000;
 	font-family: "Open Sans", sans-serif; 
 }
+
 @media (max-width: 725px){
 	#header{
 		display: none;
@@ -12,6 +13,8 @@ body {
 		display: none;
 	}
 	#make-3D-space{
+		display: flex;
+    flex-direction: row;
     position: relative;
     perspective: 800px;
     top: 0%;
@@ -20,8 +23,7 @@ body {
     width: 100%;
     height: 900px;
     transform-style: preserve-3d;
-    transition: transform 5s;
-    position:absolute; 
+    transition: transform 5s; 
 }
 #arrow-left{
 	display: none;
@@ -80,15 +82,15 @@ body {
             transition: all 200ms ease-out; 
 }
 #carousel{
-	width:525px;
+	width:100%;
 	height:900px;
 	overflow:hidden;
-	position:relative;
+	position:absolute;
 
 }
 #carousel ul{
 	position:absolute;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	display: block;
 	top:0;
@@ -96,9 +98,10 @@ body {
 }
 #carousel li{
 	float:left;
-	width: 525px;
+	width: auto;
 	height: 100%;
-	overflow:hidden;	
+	overflow:hidden;
+	position: absolute;	
 }
 .arrows-perspective{
 	display: none;
@@ -156,7 +159,7 @@ a:hover{
     transition: transform 5s;
     position:absolute;    
     top:5%;
-    left:40%;	
+    left:55%;	
     margin-left:-167px;
 }
 #arrow-left{
@@ -203,6 +206,7 @@ a:hover{
 }
 #make-3D-space{
     position: relative;
+
     perspective: 800px;
     width:100%;
     height:100%;
@@ -286,67 +290,7 @@ a:hover{
 	float:left;
 	overflow:hidden;	
 }
-.arrows-perspective{
-	display: none;
-	width:335px;
-	height:55px;
-	position: absolute;
-	top: 218px;
-	transform-style: preserve-3d;
-    transition: transform 5s;
-	perspective: 335px;
-}
-.carouselPrev, .carouselNext{
-	display: none;
-	width: 50px;
-	height: 55px;
-	background: #ccc;
-	position: absolute;	
-	top:0;
-	transition: all 200ms ease-out; 
-	opacity:0.9;
-	cursor:pointer;
-}
-.carouselNext{
-	top:0;
-	right: 3%;
-	-webkit-transform: rotateY( -117deg );
-         -moz-transform: rotateY( -117deg );
-           -o-transform: rotateY( -117deg );
-              transform: rotateY( -117deg );
-			  transition: all 200ms ease-out; 			
 
-}
-.carouselNext.visible{
-		right:0;
-		opacity:0.8;
-		background: #efefef;
-		-webkit-transform: rotateY( 0deg );
-         -moz-transform: rotateY( 0deg );
-           -o-transform: rotateY( 0deg );
-              transform: rotateY( 0deg );
-			  transition: all 200ms ease-out; 
-}
-.carouselPrev{		
-	left:-26px;
-	top:0;
-	-webkit-transform: rotateY( 117deg );
-         -moz-transform: rotateY( 117deg );
-           -o-transform: rotateY( 117deg );
-              transform: rotateY( 117deg );
-			  transition: all 200ms ease-out; 
-
-}
-.carouselPrev.visible{
-		left:0;
-		opacity:0.8;
-		background: #eee;
-		-webkit-transform: rotateY( 0deg );
-         -moz-transform: rotateY( 0deg );
-           -o-transform: rotateY( 0deg );
-              transform: rotateY( 0deg );
-			  transition: all 200ms ease-out; 
-}
 #carousel .x, #carousel .y{
 	height:2px;
 	width:15px;
@@ -375,7 +319,8 @@ a:hover{
 	transform: rotate(135deg);		
 }
 .color{
-	width: 490px;
+	top: 50%;
+	width: auto;
 	font-weight: bold;
 	text-align: center;
 	left:50%;
