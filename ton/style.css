@@ -18,7 +18,7 @@ body {
     margin-top: 0;
     left: 0%;
     width: 100%;
-    height: 100%;
+    height: 900px;
     transform-style: preserve-3d;
     transition: transform 5s;
     position:absolute; 
@@ -89,7 +89,7 @@ body {
 }
 #carousel{
 	width:525px;
-	height:600px;
+	height:900px;
 	overflow:hidden;
 	position:relative;
 
