@@ -324,7 +324,7 @@ body {
   top: 10px;
   width:100%;
   max-width: 600px;
-  height: 800px; 
+  height: 80%; 
   border-radius: 5px;
   padding-top: 40px;
   padding-bottom: 40px; 
@@ -369,7 +369,6 @@ body {
             transition: all 200ms ease-out; 
 }
 .carousel{
-  position:relative;
   top: 0;
 
 }
@@ -707,8 +706,8 @@ div.shadow{
     transform-style: preserve-3d;
     transition: transform 5s;
     position:absolute;    
-    top:5%;
-    right:10px; 
+    top:2%;
+    right:15px; 
     margin-left:-167px;
     padding-bottom: 20px;
 }
