@@ -15,7 +15,7 @@ body {
   max-width: 1335px;
   height: 100vh;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -318,7 +318,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  text-align: left;
   position:relative; 
   border-radius: 5px; 
   top: 10px;
@@ -370,6 +370,7 @@ body {
 }
 .carousel{
   position:relative;
+  top: 0;
 
 }
 .carousel ul{
