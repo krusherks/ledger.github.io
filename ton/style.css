@@ -557,7 +557,7 @@ div.product-card.flip180{
   width:152px;
   font-size:15px;
   margin-left:-75px;
-  top:285px;
+  top:28%;
   -webkit-transition: all 200ms ease-out; 
        -moz-transition: all 200ms ease-out; 
          -o-transition: all 200ms ease-out; 
@@ -707,6 +707,7 @@ div.shadow{
     transition: transform 5s;
     position:absolute;    
     top:5%;
-    left:55%; 
+    right:15%; 
     margin-left:-167px;
+    padding-bottom: 20px;
 }
