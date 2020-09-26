@@ -877,7 +877,12 @@ END Contact Area
 .footer-area p{
     color: #666;
 }
-
+a{
+    color: #666;
+}
+a:hover {
+    color: #d3f0f7;
+}
 .resp-sharing-button__link,
 .resp-sharing-button__icon {
   display: inline-block
